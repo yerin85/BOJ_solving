@@ -27,3 +27,12 @@ Compiler : Visual C++ Compiler / Java Compiler 12
 for i, value in enumerate(lists):
  print(i, value)
 ```
+
+4. 정렬
+```python
+list.sort() # 오름차순
+list.sort(reverse = True) #내림차순 False는 오름차순
+list.sort(key = len) # 길이순 정렬
+list.sort(key = lambda x: x) # 오름차순
+list.sort(key = lambda x: (len(x), x)) # 길이, 값 순으로 정렬
+```
